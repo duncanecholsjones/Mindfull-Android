@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MoodTrackingActivitySecond">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="69dp"
+        android:layout_height="17dp"
+        android:text="@string/anxious"
+        app:layout_constraintBottom_toTopOf="@+id/calm_slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/calm_slider"
+        android:layout_width="211dp"
+        android:layout_height="72dp"
+        android:rotation="270"
+        android:stepSize="1.0"
+        android:valueFrom="0.0"
+        android:valueTo="10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        app:thumbColor="@color/purple_active"
+        app:trackColorActive="@color/purple_active"
+        app:trackColorInactive="@color/purple_inactive" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calm"
+        app:layout_constraintBottom_toTopOf="@+id/anxious_slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/anxious_slider"
+        android:layout_width="217dp"
+        android:layout_height="36dp"
+        android:rotation="270"
+        android:stepSize="1.0"
+        android:valueFrom="0.0"
+        android:valueTo="10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toEndOf="@+id/calm_slider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        app:thumbColor="@color/purple_active"
+        app:trackColorActive="@color/purple_active"
+        app:trackColorInactive="@color/purple_inactive" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MoodTrackingActivitySecond">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout_editor_absoluteX="107dp"-->
+<!--        tools:layout_editor_absoluteY="157dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.google.android.material.slider.RangeSlider-->
+<!--                android:id="@+id/calm_slider"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="120dp"-->
+<!--                android:layout_marginTop="288dp"-->
+<!--                android:rotation="270"-->
+<!--                android:stepSize="1.0"-->
+<!--                android:valueFrom="0.0"-->
+<!--                android:valueTo="10.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:thumbColor="@color/purple_active"-->
+<!--                app:trackColorActive="@color/purple_active"-->
+<!--                app:trackColorInactive="@color/purple_inactive" />-->
+
+<!--            <com.google.android.material.slider.RangeSlider-->
+<!--                android:id="@+id/anxious_slider"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="288dp"-->
+<!--                android:layout_marginEnd="116dp"-->
+<!--                android:rotation="270"-->
+<!--                android:stepSize="1.0"-->
+<!--                android:valueFrom="0.0"-->
+<!--                android:valueTo="10.0"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:thumbColor="@color/purple_active"-->
+<!--                app:trackColorActive="@color/purple_active"-->
+<!--                app:trackColorInactive="@color/purple_inactive" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/next_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="184dp"-->
+<!--                android:text="@string/next"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.498"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/anxious_slider" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="68dp"-->
+<!--                android:layout_marginTop="88dp"-->
+<!--                android:text="@string/calm"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="88dp"-->
+<!--                android:layout_marginEnd="76dp"-->
+<!--                android:text="@string/anxious"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284462621144",
+    "project_id": "cs5520-mindfull-final-project",
+    "storage_bucket": "cs5520-mindfull-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284462621144:android:bc43b4d656d9245843d2ad",
+        "android_client_info": {
+          "package_name": "com.mad.cs5520_mindfull"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284462621144-g0me26sgoffgmpeeedj72urugrebb0rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5E6ske8-YUfFagx_2FHRgNCjh12gad3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284462621144-g0me26sgoffgmpeeedj72urugrebb0rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
